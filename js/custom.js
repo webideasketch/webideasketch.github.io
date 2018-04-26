@@ -70,6 +70,59 @@
       onPrev: function(opt) {}
     });
 
+    var scrollorama = $.scrollorama({ blocks: '.scrollblock' });
+    scrollorama
+      .animate('#unpin', { duration: 5000, property: 'padding-top', start: 400, pin: true });
+
+    scrollorama.onBlockChange(function (f) {
+      console.log(scrollorama.blockIndex);
+    });
+
+    $('footer').css('height','200px');
+
+
+
+    // $.fn.moveIt = function () {
+    //   var $window = $(window);
+    //   var instances = [];
+
+    //   $(this).each(function () {
+    //     instances.push(new moveItItem($(this)));
+    //   });
+    //   var lastScroll = $window.scrollTop();
+    //   window.addEventListener('scroll', function () {
+    //     var scrollTop = $window.scrollTop();
+    //     if (scrollorama.blockIndex == 2){
+    //       var currentScroll = (scrollTop - lastScroll) * 0.2;
+    //       lastScroll += 1; //currentScroll;
+    //       $window.scrollTop(lastScroll);
+    //       // instances.forEach(function (inst) {
+    //       //   inst.update(scrollTop);
+    //       // });
+    //     }
+    //     else {
+    //       lastScroll = $window.scrollTop();
+    //     }
+        
+    //   }, { passive: true });
+    // }
+
+    // var moveItItem = function (el) {
+    //   this.el = $(el);
+    //   this.speed = parseInt(this.el.attr('data-scroll-speed'));
+    // };
+
+    // moveItItem.prototype.update = function (scrollTop) {
+    //   this.el.css('transform', 'translateY(' + -(scrollTop / this.speed) + 'px)');
+    // };
+
+    // // Initialization
+    // $(function () {
+    //   $('[data-scroll-speed]').moveIt();
+    // });
+
+
+
 
   });
 

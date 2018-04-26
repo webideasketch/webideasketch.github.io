@@ -7,10 +7,11 @@
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <!-- css -->
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans:400,300,700,800" rel="stylesheet" media="screen">
-
+  <!-- <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet"> -->
   <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
   <link href="color/default.css" rel="stylesheet" media="screen">
   <link href="css/style.css" rel="stylesheet" media="screen">
+  <link href="css/work.css" rel="stylesheet" >
   
   <!-- =======================================================
     Theme Name: Alstar
@@ -39,19 +40,19 @@
       </div>
       <div class="navigation collapse navbar-collapse navbar-ex1-collapse">
         <ul class="nav navbar-nav">
-          <li class="current"><a href="#intro">Cover</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#services">Service</a></li>
-          <li><a href="#portfolio">Works</a></li>
+          <li class="current"><a href="#intro" class="nav-button">Cover</a></li>
+          <li><a href="#about" class="nav-button">About</a></li>
+          <li><a href="#services" class="nav-button">Service</a></li>
+          <!-- <li><a href="#portfolio" class="nav-button">Works</a></li> -->
           <!-- <li><a href="#team">Team</a></li> -->
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="#contact" class="nav-button">Contact</a></li>
         </ul>
       </div>
     </div>
   </nav>
 
   <!-- intro area -->
-  <div id="intro">
+  <div id="intro" class="scrollblock">
     <!-- <a href="#services"> -->
     <div class="intro-text">
       <div class="container">
@@ -70,7 +71,7 @@
   </div>
 
   <!-- About -->
-  <section id="about" class="home-section bg-white">
+  <section id="about" class="home-section bg-white scrollblock">
     <div class="container">
       <div class="row">
         <div class="col-md-offset-2 col-md-8">
@@ -98,21 +99,56 @@
   </section>
 
   <!-- Parallax 1 -->
-  <section id="parallax1" class="home-section parallax" data-stellar-background-ratio="0.5">
+  <!-- <div class="scrollblock" id="when1"> -->
+  <section id="parallax1_work" class="scrollblock home-section" style="background-color: black;">
     <div class="container">
       <div class="row">
         <div class="col-md-12">
           <div class="color-light">
-            <h2 class="wow bounceInDown" data-wow-delay="0.5s">프로토타입 설계, 제작, 특허 등록</h2>
-            <p class="lead wow bounceInUp" data-wow-delay="1s">이 모든 것을 끝까지 도와드립니다.</p>
-          </div>
-        </div>
-      </div>
+<div style="height:200px;"></div>
+<div class="content_work">
+  <div class="content__container">
+    <p class="content__container__text">
+      아이디어
+    </p>
+    
+    <div class="content__container__list" id="unpin">
+      <div class="content__container__list__item">안드로이드</div>
+      <div class="content__container__list__item">아이폰</div>
+      <div class="content__container__list__item">게임</div>
+      <div class="content__container__list__item">음성인식</div>
+      <div class="content__container__list__item">안면인식</div>
+      <div class="content__container__list__item">바디킷</div>
+      <div class="content__container__list__item">휠체어</div>
+      <div class="content__container__list__item">킥보드</div>
+      <div class="content__container__list__item">자전거</div>
+      <div class="content__container__list__item">스케이트보드</div>
+      <div class="content__container__list__item">가정용 승강기</div>
+      <div class="content__container__list__item">자동 블라인드</div>
+      <div class="content__container__list__item">인테리어 소픔</div>
     </div>
-  </section>
+  </div>
+</div>
+
+
+      <!-- <div id="unpin">
+        <div>Time &amp; Money</div>
+        <div>Older Browsers</div>
+        <div>Performance</div>
+        <div>Content</div>
+        <div>Website vs. Web App</div>
+      </div> -->
+    <!-- <h2 class="wow bounceInDown" data-wow-delay="0.5s">프로토타입 설계, 제작, 특허 등록</h2>
+      <p class="lead wow bounceInUp" data-wow-delay="1s">이 모든 것을 끝까지 도와드립니다.</p> -->
+    </div>
+  </div>
+</div>
+</div>
+</section>
+<!-- </div> -->
 
   <!-- Services -->
-  <section id="services" class="home-section bg-white">
+  <section id="services" class="home-section bg-white scrollblock">
     <div class="container">
       <div class="row">
         <div class="col-md-offset-2 col-md-8">
@@ -123,12 +159,10 @@
           </div>
         </div>
       </div>
-
-
       <div class="row">
         <div class="col-md-12">
           
-          <div id="carousel-service" class="service carousel slide">
+          <div id="carousel-service" class="service carousel">
             <br/>
             <div class="col-md-12">
               <ol class="carousel-indicators">
@@ -199,6 +233,7 @@
     </div>
   </section>
 
+  
   <!-- Works -->
   <!-- <section id="portfolio" class="home-section bg-gray">
     <div class="container">
@@ -283,7 +318,7 @@
   </section> -->
 
   <!-- Parallax 2 -->
-  <section id="parallax2" class="home-section parallax" data-stellar-background-ratio="0.5">
+  <section id="parallax2" class="scrollblock home-section parallax" data-stellar-background-ratio="0.5">
     <div class="container">
       <div class="row">
         <div class="col-md-12">
@@ -344,7 +379,7 @@
   </section> -->
 
   <!-- Contact -->
-  <section id="contact" class="home-section bg-gray">
+  <section id="contact" class="scrollblock home-section bg-gray">
     <div class="container">
       <div class="row">
         <div class="col-md-offset-2 col-md-8">
@@ -403,7 +438,7 @@
   </section>
 
   <!-- Bottom widget -->
-  <section id="bottom-widget" class="home-section bg-white">
+  <section id="bottom-widget" class="scrollblock home-section bg-white">
     <div class="container">
       <div class="row">
         <div class="col-md-4">
@@ -470,7 +505,7 @@
   </section>
 
   <!-- Footer -->
-  <footer>
+  <footer class="scrollblock" style="height:200px">
     <div class="container">
       <div class="row">
         <div class="col-md-12">
@@ -500,11 +535,15 @@
   <script src="js/mb.bgndGallery.js"></script>
   <script src="js/mb.bgndGallery.effects.js"></script>
   <script src="js/jquery.simple-text-rotator.min.js"></script>
-  <script src="js/jquery.scrollTo.min.js"></script>
+  <script src="js/jquery.scrollTo-1.4.3.1.min.js"></script>
   <script src="js/jquery.nav.js"></script>
   <script src="js/modernizr.custom.js"></script>
   <script src="js/grid.js"></script>
   <script src="js/stellar.js"></script>
+
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.scrolldeck.js"></script>
+  <script src="js/jquery.scrollorama.js"></script>
   <!-- Contact Form JavaScript File -->
   <script src="contactform/contactform.js"></script>
 

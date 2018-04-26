@@ -249,7 +249,7 @@ Home sections
 Parallax
 ============================= */
 
-#parallax1{
+#parallax1_work{
 	background-image: url(../img/parallax/1.jpg);
 }
 #parallax2{
@@ -722,6 +722,7 @@ Footer
 footer {
 	background: #00c1c1;
 	color: #fff;
+	width:100%;
 	padding: 50px 0 30px;
 }
 
