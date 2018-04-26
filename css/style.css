@@ -249,7 +249,7 @@ Home sections
 Parallax
 ============================= */
  
-#parallax1_work{
+#parallax1 {
     background-image: url(../img/parallax/1.jpg);
 }
 #parallax2{
