@@ -78,11 +78,11 @@
   animation-iteration-count: infinite; */
 }
 .content__container__list__item {
-  line-height: 40px;
+  line-height: 32px;
   margin: 0;
   text-align:center;
   /* margin: -3px 0px 0px 0px; */
-  transform: translateY( calc( -40px * 13 ));
+  transform: translateY( calc( -38px * 10 ));
 }
 
 @-webkit-keyframes opacity {
