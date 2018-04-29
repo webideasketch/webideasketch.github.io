@@ -430,7 +430,8 @@ background: linear-gradient(#c5c5c5, #efefef) content-box, linear-gradient(#fdfd
     margin-bottom: 25px;
     border-bottom:1px solid #fff;
 }
- 
+
+
 
 /*mobile*/
 @media all and (max-width: 420px) {
@@ -500,7 +501,11 @@ background: linear-gradient(#c5c5c5, #efefef) content-box, linear-gradient(#fdfd
         margin-top: -450px;
     }
 }
-
+@media screen and (orientation:landscape) {
+      .row.position {
+        margin-top: 0px;
+    }  
+}
 
 
 
