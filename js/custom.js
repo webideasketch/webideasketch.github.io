@@ -25,60 +25,81 @@
 
   //Home Background Slider
 
-  $(function() {
+var NextProcessIndex = 0;
+function NextProcess(){
+  var processElements = $('.process-item > h2');
+  var index = 0;
+  $.each(processElements, function (index, value) {
+    if (index == NextProcessIndex){
+      $(value).css('color', 'white');
+    }
+    else {
+      $(value).css('color', 'rgb(184, 184, 184)');
+    }
+    index++;
+  });
+  NextProcessIndex++;
+  if (processElements.length <= NextProcessIndex){
+    NextProcessIndex = 0;
+  }
+  setTimeout(function(){
+    NextProcess();
+  }, 2000);
+}
 
-    $.mbBgndGallery.buildGallery({
-      containment: "#intro",
-      timer: 3000,
-      effTimer: 1000,
-      controls: "#controls",
-      grayScale: false,
-      shuffle: false,
-      preserveWidth: false,
-      effect: "fade",
-      effect: {
-        enter: {
-          left: 0,
-          opacity: 0
-        },
-        exit: {
-          left: 0,
-          opacity: 0
-        },
-        enterTiming: "ease-in",
-        exitTiming: "ease-in"
+function SetGallary(){
+  $.mbBgndGallery.buildGallery({
+    containment: "#intro",
+    timer: 3000,
+    effTimer: 1000,
+    controls: "#controls",
+    grayScale: false,
+    shuffle: false,
+    preserveWidth: false,
+    effect: "fade",
+    effect: {
+      enter: {
+        left: 0,
+        opacity: 0
       },
+      exit: {
+        left: 0,
+        opacity: 0
+      },
+      enterTiming: "ease-in",
+      exitTiming: "ease-in"
+    },
 
-      // If your server allow directory listing you can use:
-      // (however this doesn't work locally on your computer)
+    images: [
+      "img/bgslides/1.jpg",
+      "img/bgslides/3.jpg",
+      "img/bgslides/2.jpg"
+    ],
 
-      //folderPath:"testImage/",
+    onStart: function () { },
+    onPause: function () { },
+    onPlay: function (opt) { },
+    onChange: function (opt, idx) { },
+    onNext: function (opt) { },
+    onPrev: function (opt) { }
+  });
+}
 
-      // else:
+  $(function() {
+    NextProcess();
+    // SetGallary();
 
-      images: [
-        "img/bgslides/1.jpg",
-        "img/bgslides/3.jpg",
-        "img/bgslides/2.jpg"
-      ],
+    // var scrollorama = $.scrollorama({ blocks: '.scrollblock' });
+    // scrollorama
+    //   .animate('#unpin', { duration: 5000, property: 'padding-top', start: 400, pin: true });
 
-      onStart: function() {},
-      onPause: function() {},
-      onPlay: function(opt) {},
-      onChange: function(opt, idx) {},
-      onNext: function(opt) {},
-      onPrev: function(opt) {}
-    });
+    // scrollorama.onBlockChange(function (f) {
+    //   console.log(scrollorama.blockIndex);
+    // });
 
-    var scrollorama = $.scrollorama({ blocks: '.scrollblock' });
-    scrollorama
-      .animate('#unpin', { duration: 5000, property: 'padding-top', start: 400, pin: true });
+    // $('footer').css('height','200px');
 
-    scrollorama.onBlockChange(function (f) {
-      console.log(scrollorama.blockIndex);
-    });
 
-    $('footer').css('height','200px');
 
 
 
@@ -218,5 +239,8 @@
 
   //animation
   new WOW().init();
+
+
+
 
 })(jQuery);
