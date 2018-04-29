@@ -445,6 +445,7 @@ background: linear-gradient(#c5c5c5, #efefef) content-box, linear-gradient(#fdfd
         position: absolute;
         width:300px;
         height:auto;
+        pointer-events:none;
     }
     input.position {
         top: 181px;
@@ -474,6 +475,7 @@ background: linear-gradient(#c5c5c5, #efefef) content-box, linear-gradient(#fdfd
         position: absolute;
         width:600px;
         height:auto;
+        pointer-events:none;
     }
 
     input.position {
