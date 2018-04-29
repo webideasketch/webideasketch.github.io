@@ -336,12 +336,16 @@ Intro
 }
 
 
-
+video::-webkit-media-controls {
+    display: none;
+}
 video::-webkit-media-controls-fullscreen-button
 {
         display: none !important;
 }
-
+video::-webkit-media-controls-timeline {
+    display: none;
+}
 
 #video-element {
     left:10px;
