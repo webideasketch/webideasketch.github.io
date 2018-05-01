@@ -472,7 +472,7 @@ input.position {
 @media all and (orientation:portrait) and (max-width: 420px) {
     .video-frame  {
         width:280px;
-        top:35px;
+        top:30px;
     }
     .mac-image {
         width:280px;
@@ -555,16 +555,16 @@ input.position {
         }    
     }
 
-    @media all and (max-height: 800px) and (min-height: 321px){
+    @media all and (max-height: 800px) and (min-height: 380px){
         .video-frame  {
-            width:400px;
+            width:350px;
             top:-30px;
         }
         .mac-image {
-            width:400px;
+            width:350px;
         }
         #slide-range {
-            top: 245px;
+            top: 210px;
             width: 70%;
         }
         .row.position {
