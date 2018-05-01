@@ -352,6 +352,42 @@ video::-webkit-media-controls-timeline {
 
 
 
+video::-webkit-media-controls {
+    display: none !important;
+}
+video::-webkit-media-controls-fullscreen-button
+{
+    display: none !important;
+}
+video::-webkit-media-controls-timeline {
+    display: none !important;
+}
+video::-webkit-media-controls-start-playback-button {
+    opacity: 0;
+    pointer-events: none;
+    width: 5px;
+}
+
+
+video::-ms-media-controls {
+    display: none !important;
+}
+video::-ms-media-controls-fullscreen-button
+{
+    display: none !important;
+}
+video::-ms-media-controls-timeline {
+    display: none !important;
+}
+video::-ms-media-controls-start-playback-button {
+    opacity: 0;
+    pointer-events: none;
+    width: 5px;
+}
+
+
+
+
 #video-element {
     left:10px;
     top:11px;
