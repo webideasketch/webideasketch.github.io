@@ -617,14 +617,19 @@ input.position {
             width:600px;
         }
         #slide-range {
-            top: 210px;
+            top: 370px;
             width: 70%;
         }
         .row.position {
             margin-top: -400px;
         }  
     }
-
+    /* @media all and (min-height: 800px){
+        .video-frame  {
+            width:600px;
+            top:-40px;
+        } 
+    } */
 }
 
 /* desktop portrait */
