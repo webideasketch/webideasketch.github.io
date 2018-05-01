@@ -318,6 +318,7 @@ Intro
 }
 
 .intro-text {
+    color:white;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -330,7 +331,9 @@ Intro
     right: 0;
     z-index:999;
 }
-
+.intro-text  h1 {
+    color:white;
+}
 .intro-range {
     width: 60px;
 }
@@ -341,7 +344,7 @@ video::-webkit-media-controls {
 }
 video::-webkit-media-controls-fullscreen-button
 {
-        display: none !important;
+    display: none !important;
 }
 video::-webkit-media-controls-timeline {
     display: none;
@@ -368,9 +371,6 @@ input[type=range] {
 
     /* background: #d3d3d3; */
     outline: none;
-
-
-
     border: solid .2em transparent;
     box-shadow: inset 0 .2em 1em rgba(0, 0, 0, 0.94);
     background-color: #c4c4c4;
@@ -434,141 +434,186 @@ background: linear-gradient(#c5c5c5, #efefef) content-box, linear-gradient(#fdfd
     width: 20%;
     margin:0 auto;
     margin-top: 20px;
-    margin-bottom: 25px;
+    margin-bottom: 10px;
     border-bottom:1px solid #fff;
 }
 
 
+.video-frame  {
+    position: relative;
+    width:300px;
+    top:20px;
+}
 
-/*mobile*/
-@media all and (max-width: 420px) {
+.mac-image {
+    left:0;
+    position: absolute;
+    width:300px;
+    height:auto;
+    pointer-events:none;
+}
+input.position {
+    top: 181px;
+    position: relative;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
 
+    height: 20px;
+    border-radius: 10px;
+    padding-left:2px;
+    padding-right:2px;
+}
+.row.position {
+    margin-top: -200px;
+}
+
+/* mobile portrait */
+@media all and (orientation:portrait) and (max-width: 420px) {
     .video-frame  {
-        position: relative;
-        width:300px;
-        top:70px;
+        width:280px;
+        top:35px;
     }
     .mac-image {
-        left:0;
-        position: absolute;
-        width:300px;
-        height:auto;
-        pointer-events:none;
+        width:280px;
     }
-    input.position {
-        top: 181px;
-        position: relative;
+    #slide-range {
+        top: 168px;
         width: 70%;
-        margin-left: auto;
-        margin-right: auto;
-
-        height: 20px;
-        border-radius: 10px;
-        padding-left:2px;
-        padding-right:2px;
     }
     .row.position {
         margin-top: -200px;
     }
+
+    .intro-text h1 {
+        font-weight: 700;
+        font-size: 25px;
+        line-height:1.1em;
+    }
+
+    .intro-text p span {
+        font-size: 20px;
+        font-weight: 300;
+    }
+
+
+    #parallax1 > h2 {
+        font-size: 27px;
+    }
 }
-/*tablet */
-@media all and (min-width:420px) {
+
+/* mobile landscape */
+@media all and (orientation:landscape) {
     .video-frame  {
-        position: relative;
-        width:600px;
-        top:0;
+        width:280px;
+        top:-30px;
     }
     .mac-image {
-        left:0;
-        position: absolute;
-        width:600px;
-        height:auto;
-        pointer-events:none;
+        width:280px;
+    }
+    #slide-range {
+        top: 168px;
+        width: 70%;
+    }
+    .row.position {
+        margin-top: -200px;
     }
 
-    input.position {
-        top: 363px;
-        position: relative;
-        width: 70%;
-        margin-left: auto;
-        margin-right: auto;
+    .intro-text h1 {
+        padding:0;
+        margin:0;
+        font-weight: 700;
+        font-size: 25px;
+        line-height:0.8em;
+    }
 
+    .intro-text p span {
+        font-size: 20px;
+        font-weight: 300;
+    }
+
+
+    #parallax1 > h2 {
+        font-size: 27px;
+    }
+
+
+    @media all and (max-height: 310px) {
+        .video-frame  {
+            top:-70px;
+        }
+        .row.position {
+            margin-top: -122px;
+        }    
+    }
+    @media all and (max-height: 320px) {
+        .video-frame  {
+            top:-90px;
+        }
+        .row.position {
+            margin-top: -122px;
+        }    
+    }
+
+    @media all and (max-height: 800px) and (min-height: 321px){
+        .video-frame  {
+            width:400px;
+            top:-30px;
+        }
+        .mac-image {
+            width:400px;
+        }
+        #slide-range {
+            top: 245px;
+            width: 70%;
+        }
+        .row.position {
+            margin-top: -200px;
+        }  
+    }
+  
+
+}
+
+/* desktop portrait */
+@media all and (orientation:portrait) and (min-width: 420px) {
+    .video-frame  {
+        width:400px;
+        top:0px;
+    }
+    .mac-image {
+        width:400px;
+    }
+    .input.position {
         height: 40px;
         border-radius: 20px;
-
         padding-left:5px;
         padding-right:5px;
     }
-
-    .position::-webkit-slider-thumb {
-        width: 25px;
-        height: 25px;        
-    }
     .row.position {
-        margin-top: -450px;
+        margin-top: -300px;
     }
-}
-@media screen and (orientation:landscape) {
-      .row.position {
-        margin-top: 0px;
-    }  
-}
 
-
-
-
-
-/*mobile*/
-@media all and (max-width: 420px) {
     .intro-text h1 {
-        color:#fff;
-        text-align:center;
         font-weight: 700;
-        font-size: 27px;
-        line-height:1.1em;
-        padding-top:30px;
-        text-transform: uppercase;
- 
-    }
-
-    .intro-text p span {
-        color:#fff;
-        font-size: 20px;
-        text-align:center;
-        font-weight: 300;
-    }
-
-
-    #parallax1 > h2 {
-        font-size: 27px;
-    }
-
-}
-/*tablet */
-@media all and (min-width:420px) {
-    .intro-text h1 {
-        color:#fff;
-        text-align:center;
-        font-weight: 700;
-        font-size: 40px;
-        line-height:1.1em;
-        padding-top:30px;
-        text-transform: uppercase;
- 
-    }
- 
-    .intro-text p span {
-        color:#fff;
         font-size: 30px;
-        text-align:center;
+        line-height:1em;
+    }
+ 
+    .intro-text p span {
+        font-size: 20px;
         font-weight: 300;
     }
 
     #parallax1 > h2 {
         font-size: 40px;
     }
+
 }
- 
+
+
+
+
  
  
 /* ================================
