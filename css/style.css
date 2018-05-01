@@ -341,6 +341,7 @@ Intro
 
 
 video::-webkit-media-controls {
+    opacity: 0;
     display: none !important;
 }
 video::-webkit-media-controls-fullscreen-button
@@ -357,10 +358,12 @@ video::-webkit-media-controls-start-playback-button {
 }
 video::-webkit-media-controls-panel {
     display: none !important;
+    opacity: 0;
 }
 
 
 video::-ms-media-controls {
+    opacity: 0;
     display: none !important;
 }
 video::-ms-media-controls-fullscreen-button
@@ -376,6 +379,7 @@ video::-ms-media-controls-start-playback-button {
     width: 5px;
 }
 video::-ms-media-controls-panel {
+    opacity: 0;
     display: none !important;
 }
 
