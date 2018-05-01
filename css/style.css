@@ -588,7 +588,18 @@ input.position {
         }
         .row.position {
             margin-top: -122px;
-        }    
+        } 
+        .intro-text h1 {
+            font-weight: 800;
+            font-size: 20px;
+            line-height:0.8em;
+        }
+
+        .intro-text p span {
+            font-size: 15px;
+            font-weight: 200;
+        }
+  
     }
 
     @media all and (max-height: 600px) and (min-height: 380px){
@@ -605,7 +616,10 @@ input.position {
         }
         .row.position {
             margin-top: -200px;
-        }  
+        }
+        .intro-text  h1 {
+            font-size: 25px;
+        }
     }
   
     @media all and (min-height: 600px){
@@ -622,7 +636,10 @@ input.position {
         }
         .row.position {
             margin-top: -400px;
-        }  
+        }
+        .intro-text  h1 {
+            font-size: 35px;
+        }
     }
     /* @media all and (min-height: 800px){
         .video-frame  {
