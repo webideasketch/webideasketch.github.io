@@ -637,8 +637,9 @@ input.position {
         .row.position {
             margin-top: -400px;
         }
-        .intro-text  h1 {
-            font-size: 35px;
+        .intro-text h1 {
+            font-size: 50px;
+            font-weight: 600;
         }
     }
     /* @media all and (min-height: 800px){
