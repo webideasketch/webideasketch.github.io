@@ -340,15 +340,17 @@ Intro
 
 
 video::-webkit-media-controls {
-    display: none;
+    display: none !important;
 }
 video::-webkit-media-controls-fullscreen-button
 {
     display: none !important;
 }
 video::-webkit-media-controls-timeline {
-    display: none;
+    display: none !important;
 }
+
+
 
 #video-element {
     left:10px;
