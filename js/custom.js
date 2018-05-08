@@ -85,6 +85,8 @@ function SetGallary(){
   });
 }
 
+
+
   $(function() {
     NextProcess();
     SetGallary();
@@ -104,6 +106,16 @@ function SetGallary(){
       }
     });
 
+    
+    function blinkText(){
+      $('.blink_text').animate({ opacity: 0 }, 1000, "linear", function () {
+        $(this).animate({ opacity: 1 }, 1000);
+      });
+    }
+    
+    setTimeout(function(){
+      setInterval(blinkText, 1000);
+    }, 4000);
 
     // var scrollorama = $.scrollorama({ blocks: '.scrollblock' });
     // scrollorama

@@ -20,7 +20,7 @@ General
 body{
     text-align: center;
     font-family: 'Open Sans', sans-serif;
-    font-size: 14px;
+    font-size: 15px;
     line-height: 1.6em;
     /* background-color: black; */
 }
@@ -76,7 +76,7 @@ button {
     user-select: none;
 }
 button.navbar-toggle {
-    background: #2b2b2b;
+    background: white;
     border: none;
     color: #fff;
 }
@@ -187,6 +187,9 @@ nav.navbar.fixed-to-top{
     text-transform: uppercase;
     font-weight: 700;
     font-size: 1.5em;
+    margin: 0;
+    padding: 0;
+    margin-left:10px;
 }
  
 /* ================================
@@ -534,9 +537,6 @@ input.position {
     .contact_us_item {
         width: 33.3%;
     }
-    .contact_us_item_center {
-        width: 33.4%;
-    }
 
     .video-frame  {
         width:280px;
@@ -557,7 +557,7 @@ input.position {
         padding:0;
         margin:0;
         font-weight: 700;
-        font-size: 25px;
+        font-size: 30px;
         line-height:0.8em;
     }
 
