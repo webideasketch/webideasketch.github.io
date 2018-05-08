@@ -71,9 +71,9 @@ function SetGallary(){
     },
 
     images: [
-      "img/bgslides/1.jpg",
-      "img/bgslides/3.jpg",
-      "img/bgslides/2.jpg"
+      "img/bgslides/1.png",
+      "img/bgslides/2.png",
+      "img/bgslides/3.png"
     ],
 
     onStart: function () { },
@@ -87,7 +87,23 @@ function SetGallary(){
 
   $(function() {
     NextProcess();
-    // SetGallary();
+    SetGallary();
+
+    $(window).resize(function () {
+      var height = $(window).height();
+      var width = $(window).width();
+      console.log('width is : ' + width);
+      console.log('height is : ' + height);
+      if (height > width) {
+        $('.contact_us_item').css('width','100%');
+        $('.contact_us_item_center').css('width','100%');
+      }
+      if (height < width) {
+        $('.contact_us_item').css('width', (width/3.0)+'px');
+        $('.contact_us_item_center').css('width', (width / 3.0) +'px');
+      }
+    });
+
 
     // var scrollorama = $.scrollorama({ blocks: '.scrollblock' });
     // scrollorama
