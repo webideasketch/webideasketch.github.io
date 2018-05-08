@@ -22,7 +22,7 @@ body{
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
     line-height: 1.6em;
-    background-color: black;
+    /* background-color: black; */
 }
  
 h1 {
@@ -263,29 +263,13 @@ Intro
 ================================= */
  
 #intro {
-    position: relative;
-    margin: 0 auto;
-    width: 100%;
-    overflow-x: hidden;
-    height:100vh;
-    z-index:2;
-    background-size:cover;
-
-    background: linear-gradient(rgba(0, 0, 0,1),gray);
-
-    /* background: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 80%),
-                radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 25%, #5d4a1f 62.5%, #5d4a1f 100%); */
-
-
-
-    opacity:0;  
-    -webkit-animation: fadein 3s forwards; /* Safari, Chrome and Opera > 12.1 */
-       -moz-animation: fadein 3s forwards; /* Firefox < 16 */
-        -ms-animation: fadein 3s forwards; /* Internet Explorer */
-         -o-animation: fadein 3s forwards; /* Opera < 12.1 */
-            animation: fadein 3s forwards;
-
-
+	position: relative;
+	margin: 0 auto;
+	width: 100%;
+	overflow-x: hidden;
+	height:100vh;
+	z-index:2;
+	background-size:cover;
 }
  
 @keyframes fadein {
@@ -318,7 +302,7 @@ Intro
 }
 
 .intro-text {
-    color:white;
+    color:rgb(236, 236, 236);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -332,10 +316,17 @@ Intro
     z-index:999;
 }
 .intro-text  h1 {
-    color:white;
+    color:rgb(236, 236, 236);
+    text-shadow: 1px 1px 20px #000000;
 }
 .intro-range {
     width: 60px;
+}
+
+.contact_us_item_center,.contact_us_item {
+    float:left;
+    width: 100%;
+    margin: 0 auto;
 }
 
 
@@ -540,6 +531,13 @@ input.position {
 
 /* mobile landscape */
 @media all and (orientation:landscape) {
+    .contact_us_item {
+        width: 33.3%;
+    }
+    .contact_us_item_center {
+        width: 33.4%;
+    }
+
     .video-frame  {
         width:280px;
         top:-30px;
